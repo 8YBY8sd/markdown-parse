@@ -19,7 +19,6 @@ public class MarkdownParseTest { //create a class
         Path fileName = Path.of("C:\\Users\\yubin\\OneDrive - UC San Diego\\UCSD\\UCSD study\\CSE 15L\\lab\\lab3\\markdown-parser\\test-file.md");
         String content = Files.readString(fileName);
         ArrayList<String> links = MarkdownParse.getLinks(content);
-        
         assertEquals(links, list);
     }
 }
