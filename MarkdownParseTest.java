@@ -60,7 +60,7 @@ public class MarkdownParseTest { //create a class
 
     @Test
     public void getLinksTestFile5() throws IOException {
-        List<String> list = List.of();
+        List<String> list = List.of("page.com");
         Path fileName = Path.of("C:\\Users\\yubin\\OneDrive - UC San Diego\\UCSD\\UCSD study\\CSE 15L\\lab\\lab3\\markdown-parser\\test-file5.md");
         String content = Files.readString(fileName);
         ArrayList<String> links = MarkdownParse.getLinks(content);
@@ -69,7 +69,7 @@ public class MarkdownParseTest { //create a class
 
     @Test
     public void getLinksTestFile6() throws IOException {
-        List<String> list = List.of();
+        List<String> list = List.of("page.com");
         Path fileName = Path.of("C:\\Users\\yubin\\OneDrive - UC San Diego\\UCSD\\UCSD study\\CSE 15L\\lab\\lab3\\markdown-parser\\test-file6.md");
         String content = Files.readString(fileName);
         ArrayList<String> links = MarkdownParse.getLinks(content);
