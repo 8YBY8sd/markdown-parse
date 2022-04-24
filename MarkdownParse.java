@@ -18,14 +18,13 @@ public class MarkdownParse {
             int closeParen = markdown.indexOf(")", openParen);
 
             // if there is an empty line at the end of the file
-            if (openBracket == -1 || closeBracket == -1 || openParen == -1 || 
-            closeParen == -1) {
+            if (openBracket == -1) {
                     break;
             }
             toReturn.add(markdown.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
         }
-        
+
         return toReturn;
     }
 
