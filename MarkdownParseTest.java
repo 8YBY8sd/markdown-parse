@@ -93,4 +93,13 @@ public class MarkdownParseTest { //create a class
         ArrayList<String> links = MarkdownParse.getLinks(content);
         assertEquals(list, links);
     }
+
+    // @Test
+    // public void getLinksLab5Task2() throws IOException {
+    //     List<String> list = List.of();
+    //     Path fileName = Path.of("C:\\Users\\yubin\\OneDrive - UC San Diego\\UCSD\\UCSD study\\CSE 15L\\lab\\lab3\\markdown-parser\\lab5task2.md");
+    //     String content = Files.readString(fileName);
+    //     ArrayList<String> links = MarkdownParse.getLinks(content);
+    //     assertEquals(list, links);
+    // }
 }
