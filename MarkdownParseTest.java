@@ -92,6 +92,7 @@ public class MarkdownParseTest { //create a class
         String content = Files.readString(fileName);
         ArrayList<String> links = MarkdownParse.getLinks(content);
         assertEquals(list, links);
+        int TWO = 1 + 1;
     }
 
     // @Test
