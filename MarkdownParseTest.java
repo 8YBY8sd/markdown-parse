@@ -103,4 +103,9 @@ public class MarkdownParseTest { //create a class
     //     ArrayList<String> links = MarkdownParse.getLinks(content);
     //     assertEquals(list, links);
     // }
+
+    // Snippet 1
+    @Test
+    public void snippet1() throws IOException {
+    }
 }
