@@ -105,10 +105,10 @@ public class MarkdownParseTest { // create a class
     // assertEquals(list, links);
     // }
 
-        // snippet1 test
+    // snippet1 test
     // @Test
     // public void snippet1() throws IOException {
-    //     List<String> list = List.of("[a link](url.com)", "another link`", "cod[e", "code]");
+    //     List<String> list = List.of("`google.com", "google.com", "ucsd.edu");
     //     Path fileName = Path.of("snippet1.md");
     //     String content = Files.readString(fileName);
     //     ArrayList<String> links = MarkdownParse.getLinks(content);
@@ -118,7 +118,7 @@ public class MarkdownParseTest { // create a class
     // snippet2 test
     // @Test
     // public void snippet2() throws IOException {
-    //     List<String> list = List.of("[a nested link](b.com)", "a nested parenthesized url", "some escaped [ brackets ]");
+    //     List<String> list = List.of("a.com", "a.com", "example.com");
     //     Path fileName = Path.of("snippet2.md");
     //     String content = Files.readString(fileName);
     //     ArrayList<String> links = MarkdownParse.getLinks(content);
@@ -128,7 +128,7 @@ public class MarkdownParseTest { // create a class
     // snippet3 test
     @Test
     public void snippet3() throws IOException {
-        List<String> list = List.of("[this title text is really long and takes up more than one line", "and has some line breaks]( https://www.twitter.com )", "this title text is really long and takes up more than one line", "[this link doesn't have a closing parenthesis](github.com", "And there's still some more text after that.", "[this link doesn't have a closing parenthesis for a while](https://cse.ucsd.edu/", ")", "And then there's more text");
+        List<String> list = List.of("https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule");
         Path fileName = Path.of("snippet3.md");
         String content = Files.readString(fileName);
         ArrayList<String> links = MarkdownParse.getLinks(content);
